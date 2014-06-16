@@ -26,7 +26,7 @@ namespace WpfApplication1
 
         private void btnHello_Click(object sender, RoutedEventArgs e)
         {
-
+            btnHello.Content = "Bob";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

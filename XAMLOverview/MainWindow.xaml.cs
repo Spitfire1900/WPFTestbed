@@ -24,5 +24,10 @@ namespace XAMLOverview
         {
             InitializeComponent();
         }
+
+        private void btnHello_Click(object sender, RoutedEventArgs e)
+        {
+            btnHello.Content = "Bob";
+        }
     }
 }
