@@ -13,6 +13,7 @@
     <Grid>
         <Label Content="MSDN XAML Overview" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577"/>
         <StackPanel>
+            <!--<UIElementCollection>-->
             <StackPanel.Children Margin="0,36,0,0">
                 <!--Create a Button-->
                 <Button Content="I'm a Button!" />
@@ -22,6 +23,7 @@
                     <TextBox Width="300"/>
                 </Border>
             </StackPanel.Children>
+            <!--</UIElementCollection-->
         </StackPanel>
     </Grid>
 </Window>
