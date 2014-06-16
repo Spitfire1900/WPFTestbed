@@ -2,6 +2,14 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <!--<GradientStop Color="White" Offset="1"/>-->
+            <GradientStop Color="#FF6E6E6E" Offset="0.909"/>
+            <GradientStop Color="#FE212121" Offset="0.003"/>
+            <GradientStop Color="#FE212121" Offset="0.097"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
         <Label Content="MSDN XAML Overview" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577"/>
         <StackPanel Margin="0,36,0,0">
@@ -9,7 +17,7 @@
             <Button Content="I'm a Button!" />
             <Button Background="Blue" Foreground="Red" Content="I'm a blue button with red text!" />
             <!--Create a more complex button-->
-            
+
         </StackPanel>
 
     </Grid>
