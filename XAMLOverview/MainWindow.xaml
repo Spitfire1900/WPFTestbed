@@ -4,6 +4,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Label Content="MSDN XAML Overview" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.577"/>
+        <StackPanel Margin="0,36,0,0">
+            <!--Create a Button-->
+            <Button Content="I'm a Button!" />
+            <Button Background="Blue" Foreground="Red" Content="I'm a blue button with red text!" />
+            <!--Create a more complex button-->
+            
+        </StackPanel>
 
     </Grid>
 </Window>
