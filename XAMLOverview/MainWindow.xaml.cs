@@ -28,6 +28,7 @@ namespace XAMLOverview
         private void btnHello_Click(object sender, RoutedEventArgs e)
         {
             btnHello.Content = "Bob";
+            btnHello.Background = Brushes.BurlyWood;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
