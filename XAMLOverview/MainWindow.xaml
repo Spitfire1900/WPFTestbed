@@ -17,7 +17,7 @@
                 <!--Clickable Button-->
                 <Button x:Name="btnClicky" Click="Button_Click">Click Me!</Button>
                 <!--Button with nested attribute XML tags-->
-                <Button Content="I have nests">
+                <Button Content="I have nests" Background="#F00">
                     <Button.Margin>
                         <Thickness Left="5" Top="10" Right="5" Bottom="10" />
                     </Button.Margin>
