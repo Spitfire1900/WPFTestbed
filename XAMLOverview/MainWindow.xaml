@@ -2,13 +2,20 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <!--Creates template styles-->
+        <SolidColorBrush x:Key="MyBrush" Color="Gold" />
+    </Window.Resources>
     <Grid>
         <StackPanel>
             <StackPanel.Children>
                 <!--<UIElementCollection>-->
+                <!--Simple Button-->
                 <Button>First Button</Button>
-                <Button>Second Button</Button>
-                <Button x:Name="btnClicky" Click="Button_Click" >Click Me!</Button>
+                <!--Button whose property references a Static Resource-->
+                <Button  Background="{StaticResource MyBrush}">Second Button</Button>
+                <!--Clickable Button-->
+                <Button x:Name="btnClicky" Click="Button_Click">Click Me!</Button>
                 <!--</UIElementCollection>-->
             </StackPanel.Children>
         </StackPanel>
