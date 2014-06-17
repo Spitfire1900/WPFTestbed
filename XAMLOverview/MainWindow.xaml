@@ -3,6 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <StackPanel>
+            <StackPanel.Children>
+                <!--<UIElementCollection>-->
+                <Button>First Button</Button>
+                <Button>Second Button</Button>
+                <Button x:Name="btnClicky" Click="Button_Click" >Click Me!</Button>
+                <!--</UIElementCollection>-->
+            </StackPanel.Children>
+        </StackPanel>
         <Button x:Name="btnHello" Content="Hello" HorizontalAlignment="Left" Margin="432,288,0,0" VerticalAlignment="Top" Width="75" Foreground="Black" Click="btnHello_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -12,7 +21,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="352,288,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="352,288,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

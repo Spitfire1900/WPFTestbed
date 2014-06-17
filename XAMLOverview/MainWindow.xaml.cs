@@ -29,5 +29,14 @@ namespace XAMLOverview
         {
             btnHello.Content = "Bob";
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string s = "You Clicked me!";
+            if (btnClicky.Content != s)
+                btnClicky.Content = s;
+            else
+                btnClicky.Content = "Click Me!";
+        }
     }
 }
