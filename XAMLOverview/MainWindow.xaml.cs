@@ -27,12 +27,14 @@ namespace XAMLOverview
 
         private void btnHello_Click(object sender, RoutedEventArgs e)
         {
+            //Change btnHello's text shown to "Bob" and change its background to a woody color.
             btnHello.Content = "Bob";
             btnHello.Background = Brushes.BurlyWood;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //change btnClicky's text content based on it's previous content.
             string s = "You Clicked me!";
             if (btnClicky.Content != s)
                 btnClicky.Content = s;
