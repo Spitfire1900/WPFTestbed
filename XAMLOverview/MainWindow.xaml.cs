@@ -41,5 +41,12 @@ namespace XAMLOverview
             else
                 btnClicky.Content = "Click Me!";
         }
+
+        private void RemoveThis(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement fe = e.Source as FrameworkElement;
+            if (ButtonContainer.Children.Contains(fe))
+                ButtonContainer.Children.Remove(fe);
+        }
     }
 }
