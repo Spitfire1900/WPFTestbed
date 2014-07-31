@@ -6,6 +6,16 @@
 *.user
 *.sln.docstates
 
+# LabView User-specific files
+*.aliases
+*.lvlps
+
+# Code-Lobster Project Folder
+*.clpprj
+
+#P4Merge leftover files
+*.orig
+
 # Build results
 
 [Dd]ebug/
