@@ -4,7 +4,6 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="btnHello" Content="Hello" HorizontalAlignment="Left" Margin="432,288,0,0" VerticalAlignment="Top" Width="75" Foreground="Black" Click="btnHello_Click">
-            <!--Test Comment 3-->
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>

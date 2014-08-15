@@ -36,7 +36,7 @@ namespace XAMLOverview
         {
             //change btnClicky's text content based on it's previous content.
             string s = "You Clicked me!";
-            if (btnClicky.Content != s)
+            if ((string)btnClicky.Content != s)
                 btnClicky.Content = s;
             else
                 btnClicky.Content = "Click Me!";
