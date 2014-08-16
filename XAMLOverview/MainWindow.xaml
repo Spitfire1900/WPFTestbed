@@ -7,7 +7,7 @@
         <SolidColorBrush x:Key="MyBrush" Color="Gold" />
     </Window.Resources>
     <Grid>
-        <StackPanel>
+        <StackPanel x:Name="ButtonContainer">
             <StackPanel.Children>
                 <!--<UIElementCollection>-->
                 <!--Simple Button-->
@@ -23,8 +23,10 @@
                     </Button.Margin>
                 </Button>
                 <!--</UIElementCollection>-->
+                <Button Content="Click to Delete Me!" Click="RemoveThis"/>
             </StackPanel.Children>
         </StackPanel>
+        
         <Button x:Name="btnHello" Content="Hello" HorizontalAlignment="Left" Margin="432,288,0,0" VerticalAlignment="Top" Width="75" Foreground="Black" Click="btnHello_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -35,6 +37,7 @@
             </Button.Background>
         </Button>
         <Button Content="Button" HorizontalAlignment="Left" Margin="352,288,0,0" VerticalAlignment="Top" Width="75"/>
+        
 
     </Grid>
 </Window>
